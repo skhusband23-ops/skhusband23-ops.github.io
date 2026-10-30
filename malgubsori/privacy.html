@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>말굽소리 개인정보처리방침</title>
+<style>
+  /* Play 콘솔 '개인정보처리방침 URL'과 앱 프로필 창이 거는 공개 문서. 게시 위치: skhusband23-ops.github.io/malgubsori/privacy.html
+     2026-08-28 판(Google Sites)은 유료 결제를 적고 광고·사용 통계·오류 보고를 빠뜨려 3.11 이후 앱과 맞지 않았다.
+     항목은 logData·pushProfileToCloud·gpsCloudPayload 가 서버에 쓰는 것, ads.js·analytics.js 가 붙이는 SDK 와 맞춘다.
+     Play 데이터 보안 양식과 delete-account.html 의 "삭제되는 데이터" 표도 같은 내용이어야 한다. */
+  :root { --bg: #F4F1EA; --card: #FFFFFF; --ink: #1C211E; --sub: #5F6863; --line: #E3DED3; --primary-ink: #1E3B32; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0F1312; --card: #232A27; --ink: #F4F1EA; --sub: #C0C7C2; --line: #3E4643; --primary-ink: #DFCBA4; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; word-break: keep-all; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; color: var(--primary-ink); }
+  .sub { color: var(--sub); font-size: 14px; }
+  ol, ul { padding-left: 22px; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); font-size: 15px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  a { color: var(--primary-ink); }
+</style>
+</head>
+<body>
+<main>
+<h1>말굽소리 개인정보처리방침</h1>
+<p class="sub">앱 말굽소리 · 개발자 SKHB · 시행일 2026년 10월 30일 · 문의 <a href="mailto:skhusband23@gmail.com">skhusband23@gmail.com</a></p>
+
+<p>말굽소리(이하 "앱")는 승마 레슨·외승 기록을 남기는 앱입니다. 이 문서는 앱이 어떤 정보를 왜 모으고, 어디에 얼마나 두며, 어떻게 지울 수 있는지 설명합니다. 앱의 모든 기능은 무료이며 앱 안 결제는 없습니다.</p>
+
+<h2>1. 모으는 정보와 이유</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>정보</th><th>언제</th><th>왜</th></tr>
+  <tr><td>이메일 주소, 비밀번호(암호화되어 Google 이 보관), 계정 ID</td><td>회원가입·로그인할 때</td><td>계정을 만들고 다른 기기에서도 같은 기록을 보기 위해, 비밀번호 재설정 메일을 보내기 위해</td></tr>
+  <tr><td>레슨·외승 기록: 날짜, 종류, 장소, 말 이름, 코치 이름, 시간, 거리, 강도, 별점, 기분, 배운 점·메모, 첨부 사진</td><td>사용자가 직접 입력·저장할 때</td><td>기록을 저장하고 목록·통계·월간 리포트·공유 카드를 만들기 위해</td></tr>
+  <tr><td>정확한 위치(GPS 경로)와 그로 계산한 속도·보법·고도 통계</td><td>사용자가 외승 기록을 시작한 뒤 끝낼 때까지만. 기록 중에는 화면을 꺼도 알림 표시줄에 기록 중임을 띄우고 이어서 받습니다. 앱을 완전히 닫으면 받지 않습니다</td><td>외승 경로 지도와 거리·시간·보법 통계를 만들기 위해</td></tr>
+  <tr><td>프로필: 닉네임, 프로필 사진, 배지, 목표, 회원권(남은 횟수·기간), 즐겨찾는 코스</td><td>사용자가 설정할 때</td><td>다른 기기에서 로그인해도 같은 프로필을 보여 주기 위해</td></tr>
+  <tr><td>앱 사용 통계: 화면 이동·기록 저장 같은 앱 안 동작, 앱 인스턴스 ID, 기기 종류·OS 버전, 대략적인 지역(IP 기반)</td><td>앱을 쓰는 동안 자동으로</td><td>어떤 기능이 쓰이는지 보고 앱을 고치기 위해(Google Firebase Analytics)</td></tr>
+  <tr><td>오류 보고: 앱이 멈추거나 오류가 났을 때의 기록, 기기 종류·OS 버전</td><td>오류가 날 때 자동으로</td><td>오류를 찾아 고치기 위해(Google Firebase Crashlytics)</td></tr>
+  <tr><td>광고 관련 정보: 광고 ID, 앱 세트 ID, IP 주소로 추정한 대략적인 위치, 광고 노출·클릭 같은 상호작용, 광고 성능 진단 정보</td><td>광고가 표시될 때 자동으로</td><td>무료로 운영하기 위한 광고를 보여 주고, 광고 성과 측정과 부정 클릭 방지를 위해(Google AdMob)</td></tr>
+</table>
+</div>
+<p>앱 사용 통계·오류 보고·광고 정보는 이메일이나 계정 ID 와 연결하지 않습니다. 기록·사진·위치를 광고에 쓰지 않으며, 정보를 팔지 않습니다.</p>
+
+<h2>2. 정보를 처리하는 곳(위탁)과 국외 이전</h2>
+<p>앱은 서버를 직접 운영하지 않고 아래 Google 서비스를 씁니다. 정보는 이용할 때마다 암호화된 연결(TLS)로 Google 의 데이터센터(미국 등)로 전송·보관됩니다.</p>
+<div class="table-wrap">
+<table>
+  <tr><th>받는 곳</th><th>서비스</th><th>정보</th><th>보관 기간</th></tr>
+  <tr><td rowspan="4">Google LLC (미국)<br><a href="mailto:privacy-help@google.com">privacy-help@google.com</a></td><td>Firebase Authentication · Cloud Firestore</td><td>계정, 기록, 사진, GPS 경로, 프로필</td><td>사용자가 지우거나 계정을 삭제할 때까지</td></tr>
+  <tr><td>Firebase Analytics</td><td>앱 사용 통계</td><td>Google 기본 보관 기간(최대 14개월) 뒤 자동 삭제</td></tr>
+  <tr><td>Firebase Crashlytics</td><td>오류 보고</td><td>Google 기본 보관 기간(90일) 뒤 자동 삭제</td></tr>
+  <tr><td>Google AdMob</td><td>광고 관련 정보</td><td>Google 정책에 따름 — <a href="https://policies.google.com/technologies/partner-sites">Google 파트너 사이트의 데이터 사용</a></td></tr>
+</table>
+</div>
+<p>국외 이전을 원하지 않으면 회원가입을 하지 않거나 계정을 삭제할 수 있습니다. 다만 그 경우 기록 저장 기능을 쓸 수 없습니다.</p>
+
+<h2>3. 휴대폰에만 남는 정보</h2>
+<p>화면 테마, 저장 효과음 설정, 다음 레슨 날짜, 최근 외승 경로 보관함 일부, 서버에 아직 올라가지 않은 기록은 휴대폰 안에도 저장됩니다. 외승 보관함은 휴대폰 공간을 위해 최근 기록 위주로 남기고 오래된 것부터 자동으로 정리합니다. 앱을 지우면 휴대폰 안 정보는 함께 지워지지만, 서버에 있는 기록은 계정을 삭제할 때까지 남습니다.</p>
+
+<h2>4. 지우는 방법(파기)</h2>
+<ul>
+  <li><b>기록 하나</b>: 기록을 열어 삭제하면 서버에서 그 기록과 첨부 사진, 경로가 함께 지워집니다. 외승 기록 화면의 <b>GPS 보관함</b>에 남은 경로는 보관함에서 따로 지울 수 있습니다.</li>
+  <li><b>계정 전체</b>: 앱 홈 오른쪽 위 <b>내 프로필</b> → <b>계정 삭제</b> → 비밀번호 확인. 서버의 계정·기록·사진·경로·프로필과 이 휴대폰의 기록이 바로 지워지며 되살릴 수 없습니다. 앱 없이도 <a href="https://skhusband23-ops.github.io/malgubsori/delete-account.html">계정·데이터 삭제 안내</a>에 따라 이메일로 요청할 수 있고, 늦어도 30일 안에 처리합니다.</li>
+  <li><b>광고</b>: 휴대폰의 Google 설정 → 개인정보 보호 → 광고에서 광고 ID 를 삭제하거나 맞춤 광고를 끌 수 있습니다. 동의를 묻는 지역에서는 <b>내 프로필</b> → <b>광고 개인정보 설정</b>에서 언제든 동의를 바꿀 수 있습니다.</li>
+</ul>
+
+<h2>5. 사용자의 권리</h2>
+<p>언제든 자신의 정보를 열람·정정·삭제하거나 처리 정지를 요구할 수 있습니다. 기록은 앱에서 직접 고치거나 지울 수 있고, <b>내 프로필</b> → <b>기록 내보내기</b>로 내 기록을 파일로 받을 수 있습니다. 그 밖의 요청은 아래 문의 메일로 보내 주시면 본인 확인 후 지체 없이 처리합니다.</p>
+
+<h2>6. 안전하게 지키는 방법</h2>
+<ul>
+  <li>모든 전송은 암호화된 연결(TLS)로 합니다.</li>
+  <li>서버의 기록은 로그인한 본인만 읽고 쓸 수 있도록 접근 규칙을 걸어 두었습니다.</li>
+  <li>비밀번호는 개발자가 볼 수 없으며 Google 이 암호화해 보관합니다.</li>
+</ul>
+
+<h2>7. 위치 정보</h2>
+<p>위치 권한은 외승 기록을 시작할 때 목적을 먼저 안내하고 동의를 받은 뒤에 요청합니다. 위치는 외승 기록을 만드는 데만 쓰며, 앱이 위치를 광고나 다른 회사에 넘기지 않습니다(광고 SDK 가 IP 주소로 대략적인 지역을 추정하는 것은 위 1항과 같습니다). 위치 권한은 휴대폰 설정 → 애플리케이션 → 말굽소리 → 권한에서 언제든 끌 수 있습니다.</p>
+
+<h2>8. 아동</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 정보를 알면서 모으지 않습니다. 그런 정보가 저장된 것을 알게 되면 바로 지웁니다.</p>
+
+<h2>9. 개인정보 보호책임자와 문의</h2>
+<p>개인정보 보호책임자: SKHB 개발자 · <a href="mailto:skhusband23@gmail.com">skhusband23@gmail.com</a><br>
+개인정보 침해에 대한 신고·상담은 개인정보침해신고센터(국번 없이 118, privacy.kisa.or.kr), 개인정보분쟁조정위원회(1833-6972, www.kopico.go.kr)에도 할 수 있습니다.</p>
+
+<h2>10. 바뀐 내용</h2>
+<ul>
+  <li>2026년 10월 30일: 앱 안 결제가 없어져 결제 정보 항목을 뺐습니다. 광고(Google AdMob), 앱 사용 통계(Firebase Analytics), 오류 보고(Firebase Crashlytics)를 적었습니다. 프로필이 서버에 함께 저장되는 것, 앱 안 계정 삭제를 적었습니다.</li>
+  <li>2026년 8월 28일: 처음 시행.</li>
+</ul>
+</main>
+</body>
+</html>
